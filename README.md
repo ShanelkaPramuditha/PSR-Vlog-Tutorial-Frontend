@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# Create App with MERN Stack
+
+[Backend Repository](https://github.com/ShanelkaPramuditha/PSR-Vlog-Tutorial-Backend)
+
+[Yotube Tutorial Link](https://www.youtube.com/playlist?list=PLD1cq9h5WfZBllpNi5nvcMS0YJZLiFlMQ)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
