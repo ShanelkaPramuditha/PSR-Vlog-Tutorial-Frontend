@@ -12,6 +12,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_USERNAME: "shanelkapramuditha" # Change username
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -23,18 +25,13 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Get lowercase actor name
-        run: |
-          ACTOR_NAME=$(echo "${{ github.actor }}" | tr '[:upper:]' '[:lower:]')
-          echo "ACTOR_NAME=$ACTOR_NAME" >> $GITHUB_ENV
-
       - name: Build and push - Frontend
         uses: docker/build-push-action@v4
         with:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: ghcr.io/$ACTOR_NAME/ums-frontend:latest
+          tags: ghcr.io/${{ env.GITHU_USERNAME }}/ums-frontend:latest
 
 
 
