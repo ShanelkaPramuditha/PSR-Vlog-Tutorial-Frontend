@@ -28,7 +28,9 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: ${{ github.actor }}/ums-frontend:latest
+          # tags: ${{ github.actor }}/ums-frontend:latest
+          tags: shanelkapramuditha/ums-frontend:latest
+
 
 
 # name: Docker Image CI
