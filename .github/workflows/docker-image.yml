@@ -31,7 +31,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: ghcr.io/${{ env.GITHU_USERNAME }}/ums-frontend:latest
+          tags: ghcr.io/${{ env.GITHUB_USERNAME }}/ums-frontend:latest
 
 
 
