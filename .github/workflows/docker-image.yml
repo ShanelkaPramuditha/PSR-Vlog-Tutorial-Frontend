@@ -29,8 +29,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          # tags: ${{ github.actor }}/ums-frontend:latest
-          tags: ghcr.io/shanelkapramuditha/ums-frontend:latest
+          tags: ghcr.io/${{ github.actor }}/ums-frontend:latest
 
 
 
