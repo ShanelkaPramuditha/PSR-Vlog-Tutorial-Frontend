@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  ums-backend:
+    container_name: ums-backend
+    image: shanelkapramuditha/ums-backend
+    # ports:
+    #   - "3001:3001"  # Expose container port to the host
+    networks:
+      - nginx  # Attach to a specific network
+    volumes:
+      - backend-data:/app/data  # Example volume mount
+
+  ums-frontend:
+    container_name: ums-frontend
+    image: shanelkapramuditha/af-frontend:dev
+    # ports:
+    #   - "3000:80"  # Expose container port to the host
+    networks:
+      - nginx  # Attach to a specific network
+
+networks:
+  nginx:
+    name: nginx
+    driver: bridge  # Customize network driver if needed
+
+volumes:
+  backend-data:
+    driver: local  # Define the volume driver
