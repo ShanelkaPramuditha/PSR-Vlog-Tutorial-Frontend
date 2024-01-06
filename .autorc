@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    "git-tag",
+    "all-contributors",
+    "first-time-contributor",
+    "released"
+  ],
+  "owner": "ShanelkaPramuditha",
+  "repo": "PSR-Vlog-Tutorial-Frontend",
+  "name": "ShanelkaPramuditha",
+  "email": "99pramuditha@gmail.com",
+}
